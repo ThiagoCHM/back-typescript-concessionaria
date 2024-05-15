@@ -4,7 +4,7 @@ import { Car } from "../types"
 
 export const listarCarros = async (_: Request, res: Response) => {
     try {
-        const cars = await knex('cars')
+        const cars = await knex('carros')
         return res.status(200).json(cars)
     } catch (error) {
         return res.status(500).json({ mensagem: "erro interno" })
@@ -14,7 +14,7 @@ export const listarCarros = async (_: Request, res: Response) => {
 export const detalherCarros = async (req: Request, res: Response) => {
     const { id } = req.params
     try {
-        const car = await knex<Car>('cars')
+        const car = await knex<Car>('carros')
             .where({ id: Number(id) }).first()
 
         if (!car) {
@@ -31,7 +31,7 @@ export const cadastrarCarros = async (req: Request, res: Response) => {
     const { marca, modelo, cor, ano, valor } = req.body
 
     try {
-        const car = await knex<Omit<Car, 'id'>>('cars').insert({
+        const car = await knex<Omit<Car, 'id'>>('carros').insert({
             marca,
             modelo,
             cor,
@@ -51,7 +51,7 @@ export const atualizarCarros = async (req: Request, res: Response) => {
     const { marca, modelo, cor, ano, valor } = req.body
 
     try {
-        const car = await knex<Car>('cars')
+        const car = await knex<Car>('carros')
             .where({ id: Number(id) })
             .first()
 
@@ -59,7 +59,7 @@ export const atualizarCarros = async (req: Request, res: Response) => {
             return res.status(404).json({ mensagem: 'carro não encontrado' })
         }
 
-        await knex<Car>('cars')
+        await knex<Car>('carros')
             .where({ id: Number(id) })
             .update({ marca, modelo, cor, ano, valor })
 
@@ -73,7 +73,7 @@ export const excluirCarros = async (req: Request, res: Response) => {
     const { id } = req.params
 
     try {
-        const car = await knex<Car>('cars')
+        const car = await knex<Car>('carros')
             .where({ id: Number(id) })
             .first()
 
@@ -81,7 +81,7 @@ export const excluirCarros = async (req: Request, res: Response) => {
             return res.status(404).json({ mensagem: 'carro não encontrado' })
         }
 
-        await knex<Car>('cars')
+        await knex<Car>('carros')
             .where({ id: Number(id) })
             .del()
 
