@@ -21,8 +21,8 @@ app.get('/swagger.json', (req, res) => {
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/docs', function (req, res) {
-    res.sendFile(path.join(__dirname, 'redoc-static.html'));
+app.get('/redoc', function (req, res) {
+    res.sendFile(path.join(__dirname, '../redoc-static.html'));
 });
 
 app.use(router)

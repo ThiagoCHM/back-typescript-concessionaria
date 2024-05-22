@@ -2,7 +2,12 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "REST API",
+    "title": "Concessionária TS",
+    "x-logo": {
+      "url": "https://f002.backblazeb2.com/file/testescubos/Cubos-Academy-Logo-02.png",
+      "backgroundColor": "#000000",
+      "altText": "Cubos Academy"
+    },
     "description": ""
   },
   "host": "localhost:3000",
