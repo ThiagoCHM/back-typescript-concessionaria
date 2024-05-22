@@ -869,7 +869,7 @@
 
     /*!sc*/
     .cWARBq table tr:nth-child(2n) {
-      background-color: #fafafa;
+      background-color: #272727;
     }
 
     /*!sc*/
@@ -1066,7 +1066,7 @@
 
     /*!sc*/
     .gayXgA table tr:nth-child(2n) {
-      background-color: #fafafa;
+      background-color: #272727;
     }
 
     /*!sc*/
@@ -1567,19 +1567,19 @@
     /*!sc*/
     .iwtEuE {
       cursor: pointer;
-      color: #333333;
+      color: #fafafa;
       margin: 0;
       padding: 12.5px 20px;
       display: flex;
       justify-content: space-between;
       font-family: Montserrat, sans-serif;
-      background-color: #fafafa;
+      background-color: #272727;
     }
 
     /*!sc*/
     .iwtEuE:hover {
-      color: #32329f;
-      background-color: #ededed;
+      color: #2787ff;
+      background-color: #363636;
     }
 
     /*!sc*/
@@ -1629,7 +1629,7 @@
     .fGEtTM a:hover {
       color: #333333 !important;
       padding: 5px 0;
-      border-top: 1px solid #e1e1e1;
+      border-top: 1px solid #7e0404;
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -1947,7 +1947,7 @@
     /*!sc*/
     .fGVzNH {
       width: 260px;
-      background-color: #fafafa;
+      background-color: #272727;
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -1964,7 +1964,7 @@
         position: fixed;
         z-index: 20;
         width: 100%;
-        background: #fafafa;
+        background: #272727;
         display: none;
       }
     }
@@ -2156,7 +2156,7 @@
   <div id="redoc">
     <div class="sc-iXzffn cyBpUp redoc-wrap">
       <div class="sc-dPZUdm fGVzNH menu-content" style="top:0px;height:calc(100vh - 0px)">
-        <div style="background-color:#000000" class="sc-fBdQPP bhXSQX"><img
+        <div style="background-color:#272727" class="sc-fBdQPP bhXSQX"><img
             src="https://f002.backblazeb2.com/file/testescubos/Cubos-Academy-Logo-02.png" alt="Cubos Academy"
             class="sc-jIGoMM fQwuKH" /></div>
         <div role="search" class="sc-dExXmK fcCKrX"><svg class="sc-kqGpvY bAFwPb search-icon" version="1.1"
@@ -2171,11 +2171,13 @@
             <li tabindex="0" depth="2" data-item-id="/paths/~1carros/get" role="menuitem" class="sc-kYxEyd jiiTgL">
               <label class="sc-bpUCxw iwtEuE -depth2"><span type="get"
                   class="sc-ehiymJ hkxktA operation-type get">get</span><span tabindex="0" width="calc(100% - 38px)"
-                  class="sc-eyvHYj kgCeIH">Listagem dos Carros</span></label></li>
+                  class="sc-eyvHYj kgCeIH">Listagem dos Carros</span></label>
+            </li>
             <li tabindex="0" depth="2" data-item-id="/paths/~1carros/post" role="menuitem" class="sc-kYxEyd jiiTgL">
               <label class="sc-bpUCxw iwtEuE -depth2"><span type="post"
                   class="sc-ehiymJ hkxktA operation-type post">post</span><span tabindex="0" width="calc(100% - 38px)"
-                  class="sc-eyvHYj kgCeIH">/carros</span></label></li>
+                  class="sc-eyvHYj kgCeIH">/carros</span></label>
+            </li>
             <li tabindex="0" depth="2" data-item-id="/paths/~1carros~1{id}/get" role="menuitem"
               class="sc-kYxEyd jiiTgL"><label class="sc-bpUCxw iwtEuE -depth2"><span type="get"
                   class="sc-ehiymJ hkxktA operation-type get">get</span><span tabindex="0" width="calc(100% - 38px)"
@@ -2230,7 +2232,8 @@
           <div class="sc-kAycRU NrBoN">
             <div class="sc-fqkwJk jLkFlo api-info">
               <h1 class="sc-imWZod sc-fTFkHh cDCvoe hJudwp">Concessionária TS<!-- -->
-                <span>(<!-- -->1.0.0<!-- -->)</span></h1>
+                <span>(<!-- -->1.0.0<!-- -->)</span>
+              </h1>
               <p>Download OpenAPI specification<!-- -->:<a download="openapi.json" target="_blank"
                   class="sc-ktJcvw dyWjRw">Download</a></p>
               <div class="sc-eeDSqt sc-eBMFzZ bSgSrX cWARBq"></div>
@@ -2738,7 +2741,7 @@
     </div>
   </div>
   <script>
-    const __redoc_state = { "menu": { "activeItemIdx": -1 }, "spec": { "data": { "openapi": "3.0.0", "info": { "version": "1.0.0", "title": "Concessionária TS", "x-logo": { "url": "https://f002.backblazeb2.com/file/testescubos/Cubos-Academy-Logo-02.png", "backgroundColor": "#000000", "altText": "Cubos Academy" }, "description": "" }, "paths": { "/carros": { "get": { "description": "Listagem dos Carros", "responses": { "200": { "description": "OK" }, "500": { "description": "Internal Server Error" } } }, "post": { "description": "", "requestBody": { "$ref": "#/components/requestBodies/Body" }, "responses": { "201": { "description": "Created" }, "500": { "description": "Internal Server Error" } } } }, "/carros/{id}": { "get": { "description": "", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }], "responses": { "200": { "description": "OK" }, "404": { "description": "Not Found" }, "500": { "description": "Internal Server Error" } } }, "put": { "description": "", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }], "requestBody": { "$ref": "#/components/requestBodies/Body" }, "responses": { "204": { "description": "No Content" }, "404": { "description": "Not Found" }, "500": { "description": "Internal Server Error" } } }, "delete": { "description": "", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }], "responses": { "204": { "description": "No Content" }, "404": { "description": "Not Found" }, "500": { "description": "Internal Server Error" } } } } }, "servers": [{ "url": "http://localhost:3000" }], "components": { "requestBodies": { "Body": { "content": { "application/json": { "schema": { "type": "object", "properties": { "marca": { "example": "any" }, "modelo": { "example": "any" }, "cor": { "example": "any" }, "ano": { "example": "any" }, "valor": { "example": "any" } } } } } } } } } }, "searchIndex": { "store": ["/paths/~1carros/get", "/paths/~1carros/post", "/paths/~1carros~1{id}/get", "/paths/~1carros~1{id}/put", "/paths/~1carros~1{id}/delete"], "index": { "version": "2.3.9", "fields": ["title", "description"], "fieldVectors": [["title/0", [0, 0.597, 1, 0.597, 2, 0.196]], ["description/0", [0, 0.543, 1, 0.543, 2, 0.278]], ["title/1", [2, 0.326]], ["description/1", [2, 0.34]], ["title/2", [3, 0.084]], ["description/2", [3, 0.088]], ["title/3", [3, 0.084]], ["description/3", [3, 0.088]], ["title/4", [3, 0.084]], ["description/4", [3, 0.088]]], "invertedIndex": [["carro", { "_index": 2, "title": { "0": {}, "1": {} }, "description": { "0": {}, "1": {} } }], ["carros/{id", { "_index": 3, "title": { "2": {}, "3": {}, "4": {} }, "description": { "2": {}, "3": {}, "4": {} } }], ["do", { "_index": 1, "title": { "0": {} }, "description": { "0": {} } }], ["listagem", { "_index": 0, "title": { "0": {} }, "description": { "0": {} } }]], "pipeline": [] } }, "options": {} };
+    const __redoc_state = { "menu": { "activeItemIdx": -1 }, "spec": { "data": { "openapi": "3.0.0", "info": { "version": "1.0.0", "title": "Concessionária TS", "x-logo": { "url": "https://f002.backblazeb2.com/file/testescubos/Cubos-Academy-Logo-02.png", "backgroundColor": "#272727", "altText": "Cubos Academy" }, "description": "" }, "paths": { "/carros": { "get": { "description": "Listagem dos Carros", "responses": { "200": { "description": "OK" }, "500": { "description": "Internal Server Error" } } }, "post": { "description": "", "requestBody": { "$ref": "#/components/requestBodies/Body" }, "responses": { "201": { "description": "Created" }, "500": { "description": "Internal Server Error" } } } }, "/carros/{id}": { "get": { "description": "", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }], "responses": { "200": { "description": "OK" }, "404": { "description": "Not Found" }, "500": { "description": "Internal Server Error" } } }, "put": { "description": "", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }], "requestBody": { "$ref": "#/components/requestBodies/Body" }, "responses": { "204": { "description": "No Content" }, "404": { "description": "Not Found" }, "500": { "description": "Internal Server Error" } } }, "delete": { "description": "", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }], "responses": { "204": { "description": "No Content" }, "404": { "description": "Not Found" }, "500": { "description": "Internal Server Error" } } } } }, "servers": [{ "url": "http://localhost:3000" }], "components": { "requestBodies": { "Body": { "content": { "application/json": { "schema": { "type": "object", "properties": { "marca": { "example": "any" }, "modelo": { "example": "any" }, "cor": { "example": "any" }, "ano": { "example": "any" }, "valor": { "example": "any" } } } } } } } } } }, "searchIndex": { "store": ["/paths/~1carros/get", "/paths/~1carros/post", "/paths/~1carros~1{id}/get", "/paths/~1carros~1{id}/put", "/paths/~1carros~1{id}/delete"], "index": { "version": "2.3.9", "fields": ["title", "description"], "fieldVectors": [["title/0", [0, 0.597, 1, 0.597, 2, 0.196]], ["description/0", [0, 0.543, 1, 0.543, 2, 0.278]], ["title/1", [2, 0.326]], ["description/1", [2, 0.34]], ["title/2", [3, 0.084]], ["description/2", [3, 0.088]], ["title/3", [3, 0.084]], ["description/3", [3, 0.088]], ["title/4", [3, 0.084]], ["description/4", [3, 0.088]]], "invertedIndex": [["carro", { "_index": 2, "title": { "0": {}, "1": {} }, "description": { "0": {}, "1": {} } }], ["carros/{id", { "_index": 3, "title": { "2": {}, "3": {}, "4": {} }, "description": { "2": {}, "3": {}, "4": {} } }], ["do", { "_index": 1, "title": { "0": {} }, "description": { "0": {} } }], ["listagem", { "_index": 0, "title": { "0": {} }, "description": { "0": {} } }]], "pipeline": [] } }, "options": {} };
 
     var container = document.getElementById('redoc');
     Redoc.hydrate(__redoc_state, container);
